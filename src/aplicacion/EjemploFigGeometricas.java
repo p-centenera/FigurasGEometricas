@@ -3,6 +3,7 @@ package aplicacion;
 import dominio.Circulo;
 import dominio.CirculoGrafico;
 import dominio.RectanguloGrafico;
+import dominio.EstrellaGrafica;
 import interfaz.*;
 
 import java.awt.*;
@@ -27,9 +28,11 @@ class EjemploFigGeometricas {
         CirculoGrafico cg2 = new CirculoGrafico(300, 200, 100, Color.blue);
         RectanguloGrafico rg = new
                 RectanguloGrafico(50, 50, 450, 350, Color.green);
+        EstrellaGrafica e1 = new EstrellaGrafica(5, 100, 100, 50, Color.cyan);
         v.addElement(cg1);
         v.addElement(cg2);
         v.addElement(rg);
+        v.addElement(e1);
         PanelDibujo mipanel = new PanelDibujo(v);
         ventana.add(mipanel);
         ventana.setSize(500, 400);
